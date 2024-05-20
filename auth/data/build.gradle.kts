@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "mg.jaava.data"
+    namespace = "mg.jaava.auth.data"
     compileSdk = 34
 
     defaultConfig {
