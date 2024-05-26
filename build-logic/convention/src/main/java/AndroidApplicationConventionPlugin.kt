@@ -27,7 +27,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 configureKotlinAndroid(this)
                 configureBuildType(
                     commonExtension = this,
-                    extensionType = ExtensionType.Application
+                    extensionType = ExtensionType.APPLICATION
                 )
             }
         }

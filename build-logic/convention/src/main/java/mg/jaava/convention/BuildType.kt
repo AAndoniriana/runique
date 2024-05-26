@@ -19,7 +19,7 @@ internal fun Project.configureBuildType(
 
         val apiKey = gradleLocalProperties(rootDir, providers).getProperty("API_KEY")
         when (extensionType) {
-            ExtensionType.Application -> extensions.configure<ApplicationExtension> {
+            ExtensionType.APPLICATION -> extensions.configure<ApplicationExtension> {
                 buildTypes {
                     debug {
                         configureDebugBuildType(apiKey)
@@ -29,7 +29,7 @@ internal fun Project.configureBuildType(
                     }
                 }
             }
-            ExtensionType.Library -> extensions.configure<LibraryExtension> {
+            ExtensionType.LIBRARY -> extensions.configure<LibraryExtension> {
                 buildTypes {
                     debug {
                         configureDebugBuildType(apiKey)
