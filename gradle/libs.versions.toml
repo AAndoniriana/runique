@@ -26,9 +26,9 @@ materialIconsExtended = "1.6.7"
 navigationCompose = "2.7.7"
 securityCryptoKtx = "1.1.0-alpha06"
 timber = "5.0.1"
-ksp = "1.9.22-1.0.17"
+ksp = "1.9.22-1.0.18"
 room = "2.6.1"
-org-jetbrains-kotlin-jvm = "1.9.22"
+org-jetbrains-kotlin-jvm = "1.9.23"
 maps = "4.3.3"
 coroutines = "1.8.0"
 gmsLocation = "21.2.0"
@@ -126,6 +126,7 @@ runique-android-application-compose = { id = "runique.android.application.compos
 runique-android-library = { id = "runique.android.library", version = "unspecified" }
 runique-android-library-compose = { id = "runique.android.library.compose", version = "unspecified" }
 runique-android-feature-ui = { id = "runique.android.feature.ui", version = "unspecified" }
+runique-android-room = { id = "runique.android.room", version = "unspecified" }
 
 [bundles]
 compose = [
