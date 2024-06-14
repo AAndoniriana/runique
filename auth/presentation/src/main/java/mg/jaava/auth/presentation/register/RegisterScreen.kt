@@ -195,6 +195,7 @@ fun PasswordRequirements(
 
 @Preview
 @Composable
+@OptIn(ExperimentalFoundationApi::class)
 private fun RegisterScreenPreview() {
     RuniqueTheme {
         RegisterScreen(
