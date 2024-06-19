@@ -2,6 +2,7 @@ package mg.jaava.runique
 
 import android.app.Application
 import mg.jaava.auth.presentation.di.authViewModelModule
+import mg.jaava.core.core.di.coreDataModule
 import mg.jaava.data.di.authDataModule
 import mg.jaava.runique.di.appModule
 import org.koin.android.ext.koin.androidContext
@@ -22,7 +23,8 @@ class RuniqueApp : Application() {
             modules(
                 authDataModule,
                 authViewModelModule,
-                appModule
+                appModule,
+                coreDataModule
             )
         }
     }
