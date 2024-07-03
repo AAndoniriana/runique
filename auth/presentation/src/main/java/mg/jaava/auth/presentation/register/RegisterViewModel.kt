@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalFoundationApi::class)
+
 package mg.jaava.auth.presentation.register
 
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -20,7 +22,6 @@ import mg.jaava.core.domain.util.Result
 import mg.jaava.core.presentation.ui.UiText
 import mg.jaava.core.presentation.ui.asUiText
 
-@OptIn(ExperimentalFoundationApi::class)
 class RegisterViewModel(
     private val userDataValidator: UserDataValidator,
     private val repository: AuthRepository
