@@ -10,6 +10,7 @@ import androidx.navigation.navigation
 import mg.jaava.auth.presentation.intro.IntroScreenRoot
 import mg.jaava.auth.presentation.login.LoginScreenRoot
 import mg.jaava.auth.presentation.register.RegisterScreenRoot
+import mg.jaava.run.presentation.run_overview.RunOverviewScreenRoot
 
 @Composable
 fun NavigationRoot(
@@ -85,7 +86,7 @@ private fun NavGraphBuilder.runGraph(navController: NavHostController) {
         route = "run"
     ) {
         composable(route = "run_overview") {
-            Text(text = "Run overview")
+            RunOverviewScreenRoot()
         }
     }
 }
