@@ -10,6 +10,7 @@ class AndroidLibraryComposeConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {
+                apply("org.jetbrains.kotlin.plugin.compose")
                 apply("runique.android.library")
             }
 
