@@ -29,7 +29,7 @@ class AndroidLocationObserver(
             val locationManager = context.getSystemService<LocationManager>()!!
             var isGpsEnabled = false
             var isNetworkEnabled = false
-            while (!isGpsEnabled || !isNetworkEnabled) {
+            while (!isGpsEnabled && !isNetworkEnabled) {
                 isGpsEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
                 isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
 
