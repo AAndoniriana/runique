@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class)
 
 package mg.jaava.run.presentation.active_run
 
@@ -33,6 +33,7 @@ import mg.jaava.core.presentationdesignsystem.component.RuniqueScaffold
 import mg.jaava.core.presentationdesignsystem.component.RuniqueToolbar
 import mg.jaava.run.presentation.R
 import mg.jaava.run.presentation.active_run.components.RunDataCard
+import mg.jaava.run.presentation.active_run.maps.TrackerMap
 import mg.jaava.run.presentation.util.hasLocationPermission
 import mg.jaava.run.presentation.util.hasNotificationPermission
 import mg.jaava.run.presentation.util.shouldShowLocationPermissionRational
@@ -134,6 +135,14 @@ fun ActiveRunScreen(
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.surface)
         ) {
+            TrackerMap(
+                isRunFinished = state.isRunFinished,
+                currentLocation = state.currentLocation,
+                locations = state.runData.locations,
+                onSnapshot = {},
+                modifier = Modifier
+                    .fillMaxSize()
+            )
             RunDataCard(
                 elapsedTime = state.elapsedTime,
                 runData = state.runData,
